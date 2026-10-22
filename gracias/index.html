@@ -1,19 +1,375 @@
-<!doctype html><html lang="es"><head><meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1"><meta name="robots" content="noindex, nofollow">
-<title>¡Listo! Tu acceso está en camino</title>
-<link href="https://fonts.googleapis.com/css2?family=Archivo:wght@800;900&family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
-<style>body{margin:0;background:#0B100E;color:#F2ECDD;font-family:Inter,system-ui,sans-serif}
-.w{max-width:540px;margin:0 auto;padding:48px 20px;text-align:center}.k{color:#E0BD5E;font-size:11px;font-weight:700;letter-spacing:.16em;text-transform:uppercase}
-h1{font-family:Archivo,sans-serif;font-weight:900;font-size:34px;line-height:1.1;margin:14px 0}h1 em{font-style:normal;color:#E0BD5E}
-p{color:#CFD6D0;line-height:1.65;font-size:15px}.c{background:#F5EEDC;color:#1B1F1D;border-radius:16px;padding:20px;margin:26px 0;text-align:left}
-.c li{margin:9px 0;line-height:1.5}.s{font-size:12px;color:#9AA59E}</style></head>
-<body><div class="w"><div class="k">Reglamento Interno Inteligente · Perú</div>
-<h1>¡Listo! <em>Tu compra está confirmada.</em></h1>
-<p>Hotmart te acaba de mandar un correo con el acceso a todo lo que compraste. Puede tardar unos minutos.</p>
-<div class="c"><ol>
-<li><b>Revisa tu correo</b> (también Spam y Promociones). El asunto viene de Hotmart.</li>
-<li><b>Descarga cada archivo</b> desde el enlace del correo o desde tu cuenta en Hotmart, en «Mis compras».</li>
-<li><b>Empieza por «LEE ESTO PRIMERO»</b>: te dice en qué orden usar cada papel.</li>
-</ol></div>
-<p class="s">¿No te llegó nada en 30 minutos? Escríbenos a el3en1delviajerointeligente@gmail.com con el correo con el que compraste.</p>
-</div></body></html>
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>¡Listo! Tu compra está confirmada</title>
+<style>html,body{margin:0;padding:0;background:#0B100E;} body{padding:0 0 40px;}
+#hotmart-sales-funnel{margin:4px auto 0;max-width:460px;}</style>
+</head>
+<body>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wght@700;800;900&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+<div class="oto" id="oto">
+
+  <div class="oto__topbar">
+    <div class="oto__wordmark">Reglamento Interno <span>Inteligente</span></div>
+    <div class="oto__wordrule">Conforme a la ley laboral peruana</div>
+  </div>
+
+  <div class="oto__steps" aria-label="Progreso de tu compra">
+    <div class="oto__step is-done"><span class="oto__step-dot">🛒</span><span class="oto__step-lbl">Compra</span></div>
+    <i class="oto__step-line is-done"></i>
+    <div class="oto__step is-done"><span class="oto__step-dot">💳</span><span class="oto__step-lbl">Pago</span></div>
+    <i class="oto__step-line is-done"></i>
+    <div class="oto__step is-now"><span class="oto__step-dot">⚖️</span><span class="oto__step-lbl">Tu acceso</span></div>
+    <i class="oto__step-line"></i>
+    <div class="oto__step"><span class="oto__step-dot">2</span><span class="oto__step-lbl">&nbsp;</span></div>
+    <i class="oto__step-line"></i>
+    <div class="oto__step"><span class="oto__step-dot">3</span><span class="oto__step-lbl">&nbsp;</span></div>
+    <i class="oto__step-line"></i>
+    <div class="oto__step"><span class="oto__step-dot">4</span><span class="oto__step-lbl">&nbsp;</span></div>
+    <i class="oto__step-line"></i>
+    <div class="oto__step"><span class="oto__step-dot">📄</span><span class="oto__step-lbl">Descargas</span></div>
+  </div>
+
+  <div class="oto__stage">
+
+    <div class="oto__alert">
+      <span class="oto__alert-tag"><span class="oto__alert-pulse"></span> Compra confirmada</span>
+      <h1 class="oto__h1">✅ ¡Listo! Tu reglamento es tuyo<br><em>el acceso ya va a tu correo</em></h1>
+      <p class="oto__sub">Hotmart te manda un correo con el acceso a todo lo que compraste (revisa también Spam y Promociones). <b>Antes de ir a descargarlo, mira este video:</b> es lo que usan los dueños de negocio para no equivocarse el día que tienen que sancionar o les llega una carta notarial.</p>
+    </div>
+    <p class="oto__vsl-label"><span>👇</span> Mira esto antes de descargar tu reglamento <span>👇</span></p>
+
+    <div class="oto__vslwrap" id="otoVideo">
+      <vturb-smartplayer id="vid-6ad20aac8bfab0b5d0c35489" style="display: block; margin: 0 auto; width: 100%; max-width: 400px;"><div class="vturb-player-placeholder" style="position: relative; width: 100%; padding: 177.77777777777777% 0 0; z-index: 0; background-color: black;"></div></vturb-smartplayer>
+      <script type="text/javascript"> var s=document.createElement("script"); s.src="https://scripts.converteai.net/f558058b-a98b-4cf1-b18d-8914848ccea7/players/6ad20aac8bfab0b5d0c35489/v4/player.js", s.async=!0,document.head.appendChild(s); </script>
+    </div>
+
+    <!-- Rueda de espera: visible mientras el botón está bloqueado -->
+    <div class="oto__wait" id="otoWait" style="display:none;">
+      <span class="oto__wait-spin"></span>
+      <span class="oto__wait-txt"><b>Sigue reproduciendo el video</b> para desbloquear tu acceso</span>
+    </div>
+
+    <div class="oto__ctawrap" id="otoCtaWrap">
+
+      <div class="oto__timer" id="otoTimer">
+        <span class="oto__timer-dot"></span>
+        <span>Esta oferta se cierra en</span>
+        <b id="otoTimerClock">10:00</b>
+      </div>
+
+      <div class="oto__offer">
+        <div class="oto__offer-kicker">Solo para clientes del Reglamento · desde esta página</div>
+        <div class="oto__offer-title">ESCUDO<br><span>Asesor Laboral IA 24/7 + Protocolo 48 Horas</span></div>
+        <p class="oto__offer-lead">El reglamento te da las reglas. ESCUDO te dice qué hacer con ellas cada vez que pasa algo, y el día que te llega una carta notarial, una citación o Sunafil.</p>
+        <ul class="oto__offer-list">
+          <li><b>Le escribes o le mandas un audio, como un WhatsApp,</b> y te dice qué corresponde: amonestación verbal, amonestación escrita o suspensión. Te deja el papel redactado con el nombre, la fecha y lo que pasó, listo para imprimir.</li>
+          <li><b>Chequeo Escudo:</b> una vez por mes te hace unas preguntas simples y te dice dónde estás expuesto hoy y qué arreglar primero.</li>
+          <li><b>Protocolo 48 Horas:</b> si te llega una carta notarial, una citación a conciliación del Ministerio de Trabajo o una inspección de Sunafil, qué hacer la primera hora, el primer día y el segundo. Le tomas una foto a la carta y te dice qué papeles juntar, en qué orden y cómo responder.</li>
+          <li><b>Faltas, descansos médicos y abandono:</b> cómo mandarle la carta de preaviso por notario al que deja de venir, y qué puedes pedir y qué no ante un descanso médico.</li>
+          <li><b>Consultas ilimitadas, 24/7,</b> hecho para el Perú: con tu reglamento, los formatos de sanción y la ley laboral peruana. Más el regalo del video: 30 mensajes listos para pegarle a ESCUDO.</li>
+        </ul>
+        <div class="oto__offer-stack">
+          <div><span>Una sola consulta con un abogado laboralista</span><b>S/ 449</b></div>
+          <div class="is-hero"><span>Hoy, ilimitado, para siempre</span><b>S/ 259</b></div>
+        </div>
+      </div>
+
+      <div class="oto__why">
+        <b>Lo que pasa si no lo sumas:</b> un día de cólera sancionas tarde, dos veces por lo mismo o con el papel equivocado, y la sanción se cae. En el Perú la falta grave la tienes que probar tú: si no la pruebas, es despido arbitrario. Un sueldo y medio por cada año, hasta doce sueldos. Con un sueldo de S/ 2.000 y cinco años de antigüedad, eso ya son S/ 15.000. Por un solo trabajador.
+      </div>
+
+      <div class="oto__price">
+        <span class="oto__price-old">S/ 449</span>
+        <span class="oto__price-now">S/ 259</span>
+        <span class="oto__price-tag">Pago único</span>
+      </div>
+
+      <a class="gx-yes" href="https://pay.hotmart.com/U108144374P?off=l7ynxct8">Sí, quiero ESCUDO por S/ 259 <span>→</span></a>
+<p class="gx-pay">Se paga aparte, con Yape, tarjeta o PagoEfectivo.</p>
+<p class="gx-ya">¿Ya sumaste ESCUDO en el paso anterior? Ya es tuyo: no lo compres de nuevo.</p>
+<a class="gx-no" href="#gx-acceso">No, gracias. Quiero ir a mi acceso</a>
+
+
+      <ul class="oto__trust">
+        <li>7 días de garantía: si no te sirve, te devolvemos la plata</li>
+        <li>Pago único, no se renueva nunca</li>
+        <li>Acceso inmediato junto con tu reglamento</li>
+      </ul>
+
+      <p class="oto__legal">ESCUDO es una herramienta de orientación basada en la legislación laboral peruana vigente. No reemplaza el asesoramiento de un abogado sobre tu caso: te ayuda a actuar a tiempo y a llegar a la consulta con los papeles en orden.</p>
+    </div>
+
+  </div>
+</div>
+
+<style>
+  .oto{
+    /* Tokens de reglamento-v6 */
+    --bg:#0B100E; --bg-2:#111917; --bg-3:#18221F;
+    --gold:#E0BD5E; --gold-2:#F6D983; --gold-deep:#8A6D1F;
+    --paper:#F5EEDC; --paper-ink:#1B1F1D; --text:#F2ECDD; --soft:#CFD6D0; --dim:#9AA59E;
+    --green:#7FD39A; --red:#E4573F; --line:rgba(224,189,94,.22); --line-soft:rgba(242,236,221,.1);
+    --h:'Archivo','Inter',system-ui,sans-serif; --b:'Inter',system-ui,-apple-system,'Segoe UI',Roboto,sans-serif;
+    width:100%; max-width:580px; margin:0 auto; border-radius:24px; overflow:hidden;
+    background:radial-gradient(ellipse at top,var(--bg-3) 0%,var(--bg-2) 55%,var(--bg) 100%);
+    padding:0 0 34px; font-family:var(--b); box-sizing:border-box; color:var(--text);
+    box-shadow:0 30px 80px -30px rgba(0,0,0,.8); position:relative;
+  }
+  .oto::before{content:''; position:absolute; top:-70px; left:50%; transform:translateX(-50%);
+    width:560px; height:300px; pointer-events:none;
+    background:radial-gradient(ellipse,rgba(224,189,94,.14) 0%,transparent 70%);}
+  .oto > *{position:relative; z-index:1;}
+  .oto *{box-sizing:border-box;}
+  .oto img{display:block; max-width:100%;}
+
+  /* ---------- TOPBAR ---------- */
+  .oto__topbar{display:flex; flex-direction:column; align-items:center; gap:6px; padding:20px 18px 16px;
+    border-bottom:1px solid var(--line); background:rgba(11,16,14,.6);}
+  .oto__wordmark{font-family:var(--h); font-weight:900; font-size:21px; line-height:1; letter-spacing:-.02em; color:var(--text); text-align:center;}
+  .oto__wordmark span{color:var(--gold); text-shadow:0 0 22px rgba(224,189,94,.35);}
+  .oto__wordrule{font-size:10.5px; font-weight:700; letter-spacing:.16em; text-transform:uppercase; color:var(--gold); opacity:.8;}
+
+  /* ---------- STEPPER ---------- */
+  .oto__steps{display:flex; align-items:flex-start; justify-content:center; padding:24px 14px 30px; overflow:hidden;}
+  .oto__step{position:relative; display:flex; justify-content:center; flex:0 0 auto; min-width:0;}
+  .oto__step-dot{width:36px; height:36px; border-radius:50%; display:grid; place-items:center;
+    background:rgba(255,255,255,.04); border:1px solid var(--line-soft); font-size:14px; line-height:1;
+    color:transparent; transition:.3s ease;}
+  .oto__step-lbl{position:absolute; top:calc(100% + 7px); left:50%; transform:translateX(-50%);
+    font-size:10px; font-weight:700; color:var(--dim); white-space:nowrap; line-height:1.2;}
+  .oto__step.is-done .oto__step-dot{background:rgba(127,211,154,.14); border-color:rgba(127,211,154,.5); color:#fff;}
+  .oto__step.is-done .oto__step-lbl{color:var(--soft);}
+  .oto__step.is-now{z-index:1;}
+  .oto__step.is-now .oto__step-dot{color:var(--paper-ink); border:none; background:linear-gradient(135deg,var(--gold-2),var(--gold));
+    transform:scale(1.14); animation:otoPulse 1.8s infinite;}
+  .oto__step.is-now .oto__step-lbl{color:var(--text); font-weight:800;}
+  @keyframes otoPulse{0%,100%{box-shadow:0 0 0 0 rgba(224,189,94,.55);}70%{box-shadow:0 0 0 11px rgba(224,189,94,0);}}
+  .oto__step-line{flex:1 1 auto; height:2px; background:rgba(255,255,255,.08); margin-top:17px; min-width:6px; max-width:34px; border-radius:2px;}
+  .oto__step-line.is-done{background:linear-gradient(90deg,var(--green),rgba(127,211,154,.4));}
+
+  .oto__stage{padding:18px 24px 0;}
+
+  /* ---------- ALERTA ---------- */
+  .oto__alert{background:linear-gradient(180deg,rgba(24,34,31,.9),rgba(11,16,14,.9)); border:1px solid var(--line);
+    border-radius:20px; padding:26px 22px; text-align:center; margin-bottom:26px; box-shadow:0 10px 30px rgba(0,0,0,.5);}
+  .oto__alert-tag{display:inline-flex; align-items:center; gap:8px; background:rgba(224,189,94,.1); color:var(--gold);
+    border:1px solid rgba(224,189,94,.35); font-size:11.5px; font-weight:800; letter-spacing:.14em; text-transform:uppercase;
+    padding:7px 16px; border-radius:999px; margin-bottom:16px;}
+  .oto__alert-pulse{width:7px; height:7px; border-radius:50%; background:var(--red); box-shadow:0 0 0 3px rgba(228,87,63,.3); animation:otoBlink 1.2s infinite;}
+  @keyframes otoBlink{0%,100%{opacity:1;}50%{opacity:.3;}}
+  .oto__h1{font-family:var(--h); font-size:clamp(25px,5.6vw,34px); font-weight:900; line-height:1.08; letter-spacing:-.02em;
+    margin:0 0 13px; text-wrap:balance; color:var(--text);}
+  .oto__h1 em{font-style:normal; color:var(--gold); text-shadow:0 0 28px rgba(224,189,94,.3); display:inline-block;}
+  .oto__sub{font-size:15px; line-height:1.65; color:var(--soft); font-weight:500; margin:0 auto; max-width:440px;}
+  .oto__sub b{color:var(--text); font-weight:700;}
+
+  /* ---------- VIDEO ---------- */
+  .oto__vsl-label{display:flex; align-items:center; justify-content:center; gap:9px; font-family:var(--h);
+    font-size:clamp(15px,3.6vw,18px); font-weight:800; color:var(--text); margin:0 0 14px; text-align:center;}
+  .oto__vsl-label span{animation:otoBob 1.5s ease-in-out infinite;}
+  .oto__vsl-label span:last-child{animation-delay:.2s;}
+  @keyframes otoBob{0%,100%{transform:translateY(0);}50%{transform:translateY(4px);}}
+  .oto__vslwrap{width:100%; max-width:400px; margin:0 auto 22px; border-radius:20px; overflow:hidden; background:#070a09;
+    border:1px solid rgba(224,189,94,.4); box-shadow:0 24px 70px rgba(0,0,0,.55);}
+
+  /* ---------- ESPERA ---------- */
+  .oto__wait{display:flex; align-items:center; justify-content:center; gap:12px; font-size:14px; font-weight:600;
+    color:var(--soft); padding:18px 16px; background:rgba(224,189,94,.06); border:1px dashed rgba(224,189,94,.45); border-radius:16px;
+    max-width:400px; margin:0 auto; text-align:left; line-height:1.4;}
+  .oto__wait-txt b{color:var(--text); font-weight:800;}
+  .oto__wait-spin{width:22px; height:22px; border:3px solid rgba(224,189,94,.22); border-top-color:var(--gold);
+    border-radius:50%; animation:otoSpin .9s linear infinite; flex-shrink:0;}
+  @keyframes otoSpin{to{transform:rotate(360deg);}}
+
+  /* ---------- CTA ---------- */
+  .oto__ctawrap{display:none;}
+  .oto__ctawrap.is-in{display:block; animation:otoIn .5s cubic-bezier(.2,.8,.2,1);}
+  @keyframes otoIn{from{opacity:0; transform:translateY(16px);} to{opacity:1; transform:translateY(0);}}
+
+  /* timer rojo de 10 minutos: arranca cuando aparece el botón */
+  .oto__timer{display:flex; align-items:center; justify-content:center; gap:10px; margin:0 auto 18px; max-width:400px;
+    background:rgba(228,87,63,.12); border:1px solid rgba(228,87,63,.55); color:#FFD9D2; border-radius:999px;
+    padding:10px 18px; font-size:13px; font-weight:700;}
+  .oto__timer-dot{width:8px; height:8px; border-radius:50%; background:var(--red); box-shadow:0 0 0 3px rgba(228,87,63,.3); animation:otoBlink 1s infinite;}
+  .oto__timer b{font-family:var(--h); font-size:20px; font-weight:900; color:#fff; letter-spacing:.02em; min-width:66px; text-align:center;
+    font-variant-numeric:tabular-nums;}
+  .oto__timer.is-over{background:rgba(228,87,63,.22);}
+
+  .oto__offer{background:var(--paper); color:var(--paper-ink); border-radius:18px; padding:20px 20px 16px; margin-bottom:20px;
+    box-shadow:0 14px 40px rgba(0,0,0,.45); position:relative;}
+  .oto__offer::before{content:''; position:absolute; left:0; top:18px; bottom:18px; width:4px; background:var(--gold); border-radius:0 4px 4px 0;}
+  .oto__offer-kicker{font-size:10.5px; font-weight:800; letter-spacing:.14em; text-transform:uppercase; color:var(--gold-deep); margin-bottom:8px;}
+  .oto__offer-title{font-family:var(--h); font-weight:900; font-size:clamp(19px,4.6vw,24px); line-height:1.1; letter-spacing:-.02em; margin-bottom:14px;}
+  .oto__offer-title span{font-size:.72em; font-weight:800; color:#4a4f4c;}
+  .oto__offer-lead{font-size:13.5px; font-weight:700; line-height:1.45; color:#3a3f3c; margin:0 0 14px; padding-bottom:12px; border-bottom:1px solid rgba(27,31,29,.12);}
+  .oto__offer-list{list-style:none; margin:0; padding:0; display:flex; flex-direction:column; gap:9px;}
+  .oto__offer-list li{font-size:13.5px; line-height:1.5; padding-left:24px; position:relative; color:#2b302d;}
+  .oto__offer-list li b{color:var(--paper-ink);}
+  .oto__offer-list li::before{content:''; position:absolute; left:0; top:4px; width:15px; height:15px; border-radius:50%;
+    background:var(--gold) url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%231B1F1D' stroke-width='4' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpolyline points='20 6 9 17 4 12'/%3E%3C/svg%3E") center/9px no-repeat;}
+  .oto__offer-stack{margin:16px 0 0; padding-top:12px; border-top:1px solid rgba(27,31,29,.12); display:flex; flex-direction:column; gap:7px;}
+  .oto__offer-stack div{display:flex; justify-content:space-between; align-items:baseline; gap:12px; font-size:12.5px; color:#4a4f4c;}
+  .oto__offer-stack div b{font-family:var(--h); font-weight:800; white-space:nowrap; color:#6f746f; text-decoration:line-through;}
+  .oto__offer-stack div.is-hero{font-weight:700; color:var(--paper-ink); font-size:13.5px;}
+  .oto__offer-stack div.is-hero b{color:var(--gold-deep); text-decoration:none; font-size:17px;}
+  .oto__offer-stack b:empty{display:none;}
+
+  .oto__why{font-size:13px; line-height:1.55; color:var(--soft); background:rgba(228,87,63,.08); border:1px solid rgba(228,87,63,.3);
+    border-radius:14px; padding:14px 16px; margin-bottom:20px;}
+  .oto__why b{color:var(--text);}
+
+  .oto__price{display:flex; align-items:baseline; justify-content:center; flex-wrap:wrap; gap:12px; margin-bottom:18px;}
+  .oto__price-old{font-size:20px; font-weight:700; color:var(--dim); text-decoration:line-through;}
+  .oto__price-old:empty{display:none;}
+  .oto__price-now{font-family:var(--h); font-size:clamp(42px,10vw,58px); font-weight:900; color:var(--text); line-height:1; letter-spacing:-.03em;}
+  .oto__price-tag{font-size:11px; font-weight:800; letter-spacing:.1em; text-transform:uppercase; color:var(--paper-ink);
+    background:var(--gold); padding:6px 13px; border-radius:999px; box-shadow:0 0 18px rgba(224,189,94,.4);}
+
+  /* botón dorado, como el checkout de la landing */
+  .oto__yes{display:block; width:100%; text-align:center; text-decoration:none !important; border:none; cursor:pointer;
+    appearance:none; font-family:var(--h); color:var(--paper-ink) !important; border-radius:999px; padding:19px 24px;
+    background:linear-gradient(135deg,var(--gold-2),var(--gold) 55%,#C9A64A);
+    box-shadow:0 10px 34px rgba(224,189,94,.35); transition:transform .2s ease, box-shadow .2s ease;
+    animation:otoGlow 2.4s ease-in-out infinite;}
+  .oto__yes b{display:block; font-size:clamp(15px,3.8vw,18px); font-weight:900; letter-spacing:.2px;}
+  .oto__yes small{display:block; font-family:var(--b); font-size:12px; font-weight:600; opacity:.8; margin-top:4px;}
+  .oto__yes:hover{transform:translateY(-2px) scale(1.02);}
+  .oto__yes:active{transform:translateY(1px) scale(.99);}
+  @keyframes otoGlow{0%,100%{box-shadow:0 10px 34px rgba(224,189,94,.35);}50%{box-shadow:0 10px 46px rgba(246,217,131,.55);}}
+
+  .oto__trust{list-style:none; display:flex; flex-wrap:wrap; justify-content:center; gap:8px 15px; margin:20px 0 0; padding:0;}
+  .oto__trust li{font-size:12px; font-weight:600; color:var(--soft); display:flex; align-items:center; gap:6px;}
+  .oto__trust li::before{content:''; width:17px; height:17px; border-radius:50%; flex-shrink:0;
+    background:rgba(127,211,154,.18) url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%237FD39A' stroke-width='3.5' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpolyline points='20 6 9 17 4 12'/%3E%3C/svg%3E") center/10px no-repeat;}
+
+  .oto__legal{font-size:11px; line-height:1.55; color:var(--dim); text-align:center; margin:16px auto 0; max-width:440px;}
+
+  .oto__no{display:block; width:100%; text-align:center; margin:20px auto 0; max-width:360px; font-family:var(--b);
+    background:none; border:none; cursor:pointer; padding:6px; font-size:13px; font-weight:600; color:var(--dim);
+    text-decoration:underline; text-underline-offset:3px; transition:color .2s ease;}
+  .oto__no:hover{color:var(--text);}
+
+  @media (max-width:480px){
+    .oto{border-radius:0;}
+    .oto__stage{padding:16px 16px 0;}
+    .oto__steps{padding:20px 10px 28px;}
+    .oto__step-dot{width:32px; height:32px; font-size:13px;}
+    .oto__step-lbl{font-size:9px;}
+    .oto__step-line{margin-top:15px; max-width:22px;}
+    .oto__alert{padding:22px 16px;}
+    .oto__wordmark{font-size:18px;}
+    .oto__offer{padding:18px 16px 14px;}
+  }
+</style>
+
+<section class="gx-acc" id="gx-acceso">
+  <h2>Cómo descargar lo que compraste</h2>
+  <ol>
+    <li><b>Revisa tu correo</b> (también Spam y Promociones). El asunto viene de Hotmart.</li>
+    <li><b>Descarga cada archivo</b> desde el enlace del correo o desde tu cuenta de Hotmart, en «Mis compras».</li>
+    <li><b>Empieza por «LEE ESTO PRIMERO»</b>: te dice en qué orden usar cada papel.</li>
+  </ol>
+  <p>¿No te llegó nada en 30 minutos? Escríbenos a el3en1delviajerointeligente@gmail.com desde el correo con el que compraste.</p>
+</section>
+<style>
+.gx-yes{display:block;max-width:460px;margin:6px auto 0;padding:18px 20px;border-radius:14px;background:#E0BD5E;color:#1B1F1D;
+  font:800 18px/1.2 Archivo,Inter,system-ui,sans-serif;text-align:center;text-decoration:none;box-shadow:0 10px 26px rgba(224,189,94,.3)}
+.gx-yes span{margin-left:6px}
+.gx-pay,.gx-ya{max-width:460px;margin:10px auto 0;text-align:center;font:500 13px/1.45 Inter,system-ui,sans-serif;color:#9AA59E}
+.gx-ya{color:#CFD6D0}
+.gx-no{display:block;max-width:460px;margin:14px auto 0;text-align:center;font:500 14px Inter,system-ui,sans-serif;color:#9AA59E;text-decoration:underline}
+.gx-acc{max-width:540px;margin:36px auto 60px;padding:22px 20px;border-radius:16px;background:#F5EEDC;color:#1B1F1D;font-family:Inter,system-ui,sans-serif}
+.gx-acc h2{margin:0 0 10px;font:900 22px/1.15 Archivo,Inter,sans-serif}
+.gx-acc li{margin:9px 0;line-height:1.5} .gx-acc p{font-size:13px;color:#5B6159;margin:12px 0 0}
+</style>
+
+<script>
+(function(){
+
+  /* ============================================================
+     OTO1 · DESBLOQUEO DEL BOTÓN
+
+     CTA_DELAY_SEC = 252  -> segundo del VSL en que arranca la oferta. Ahí aparecen
+                           juntos el timer rojo, la oferta, el precio y el botón.
+     TEST_DELAY: para probar sin esperar. 0 en producción; con 10, el botón aparece a los 10 s.
+     TIMER_MIN: minutos del contador rojo (arranca al aparecer el botón). Cuando llega a 0
+     muestra "00:00" y la oferta sigue activa: lo que la cierra es salir de la página.
+     ============================================================ */
+  var CTA_DELAY_SEC = 252;
+  var TEST_DELAY    = 0;
+  var VID           = 'vid-6ad20aac8bfab0b5d0c35489';
+  var MEMO          = 'rii_pe_gracias_cta';   /* si recarga después de verlo, el botón ya está */
+  var TIMER_MIN     = 10;
+
+  var S = window.__riiPeGracias || (window.__riiPeGracias = { on:false, shown:false, vivo:false, scrolled:false, t0:Date.now(), end:0 });
+  if(S.on) return; S.on = true;
+
+  try { if(localStorage.getItem(MEMO) === '1'){ S.shown = true; S.scrolled = true; } } catch(e) {}
+  if(CTA_DELAY_SEC <= 0){ S.shown = true; S.scrolled = true; }
+
+  function $(id){ return document.getElementById(id); }
+
+  function show(){
+    if(S.shown) return;
+    S.shown = true;
+    try { localStorage.setItem(MEMO, '1'); } catch(e) {}
+  }
+
+  function timerEnd(){
+    if(S.end) return S.end;
+    var end = 0;
+    try { end = parseInt(localStorage.getItem(MEMO+'_end') || '0', 10); } catch(e) {}
+    if(!end || end < Date.now()){
+      end = Date.now() + TIMER_MIN*60*1000;
+      try { localStorage.setItem(MEMO+'_end', String(end)); } catch(e) {}
+    }
+    S.end = end;
+    return end;
+  }
+
+  function apply(){
+    var wrap = $('otoCtaWrap'), wait = $('otoWait');
+    if(!wrap) return;
+    if(S.shown){
+      if(!wrap.classList.contains('is-in')) wrap.classList.add('is-in');
+      if(wait) wait.style.display = 'none';
+      var left = Math.max(0, Math.floor((timerEnd() - Date.now())/1000));
+      var m = Math.floor(left/60), s = left%60;
+      var clock = $('otoTimerClock'), box = $('otoTimer');
+      if(clock) clock.textContent = (m<10?'0':'')+m+':'+(s<10?'0':'')+s;
+      if(left <= 0 && box) box.classList.add('is-over');
+      if(!S.scrolled){ S.scrolled = true; try { wrap.scrollIntoView({behavior:'smooth', block:'center'}); } catch(e) {} }
+    } else if(wait && wait.style.display !== 'flex'){
+      wait.style.display = 'flex';
+    }
+  }
+
+  function tick(){
+    var p = $(VID);
+    if(p){
+      /* posición actual del video, directo del player de VTurb */
+      var t = typeof p.currentTime === 'number' ? p.currentTime : 0;
+      if(t > 0.5) S.vivo = true;
+      if(t >= CTA_DELAY_SEC) show();
+    }
+    if(TEST_DELAY > 0 && Date.now() - S.t0 > TEST_DELAY * 1000) show();
+    /* respaldo: si el video nunca arrancó (VTurb caído o bloqueado), por reloj desde que cargó la página */
+    if(!S.vivo && Date.now() - S.t0 > CTA_DELAY_SEC * 1000) show();
+    apply();
+  }
+
+  tick();
+  setInterval(tick, 500);
+  if(document.readyState === 'loading') document.addEventListener('DOMContentLoaded', tick);
+})();
+</script>
+
+</body>
+</html>
