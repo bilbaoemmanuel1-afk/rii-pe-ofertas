@@ -40,8 +40,8 @@
 
     <div class="oto__alert">
       <span class="oto__alert-tag"><span class="oto__alert-pulse"></span> Compra confirmada</span>
-      <h1 class="oto__h1">✅ ¡Listo! Tu reglamento es tuyo<br><em>el acceso ya va a tu correo</em></h1>
-      <p class="oto__sub">Hotmart te manda un correo con el acceso a todo lo que compraste (revisa también Spam y Promociones). <b>Antes de ir a descargarlo, mira este video:</b> es lo que usan los dueños de negocio para no equivocarse el día que tienen que sancionar o les llega una carta notarial.</p>
+      <h1 class="oto__h1">✅ Tu reglamento ya va a tu correo<br><em>Ahora ten quién te diga qué hacer el día que llega la carta notarial</em></h1>
+      <p class="oto__sub"><b>ESCUDO</b> es tu asesor laboral 24/7: le escribes lo que pasó (una falta, un descanso médico, una carta notarial, Sunafil) y te dice qué corresponde y te deja el papel listo para firmar. <b>Mira el video</b> y súmalo abajo: pagas con Yape en un minuto.</p>
     </div>
     <p class="oto__vsl-label"><span>👇</span> Mira esto antes de descargar tu reglamento <span>👇</span></p>
 
@@ -88,11 +88,11 @@
       <div class="oto__price">
         <span class="oto__price-old">S/ 449</span>
         <span class="oto__price-now">S/ 259</span>
-        <span class="oto__price-tag">Pago único</span>
+        <span class="oto__price-tag">Pago único · ≈ US$ 69</span>
       </div>
 
-      <a class="gx-yes" href="https://pay.hotmart.com/U108144374P?off=l7ynxct8">Sí, quiero ESCUDO por S/ 259 <span>→</span></a>
-<p class="gx-pay">Se paga aparte, con Yape, tarjeta o PagoEfectivo.</p>
+      <a class="gx-yes" id="gxYes" href="https://pay.hotmart.com/U108144374P?off=l7ynxct8">Sí, quiero ESCUDO por S/ 259 <span>→</span><small>Pago con Yape, tarjeta o PagoEfectivo · acceso inmediato</small></a>
+<p class="gx-pay">Tus datos ya quedan cargados: solo eliges el medio de pago y listo.</p>
 <p class="gx-ya">¿Ya sumaste ESCUDO en el paso anterior? Ya es tuyo: no lo compres de nuevo.</p>
 <a class="gx-no" href="#gx-acceso">No, gracias. Quiero ir a mi acceso</a>
 
@@ -281,7 +281,7 @@
 <style>
 .gx-yes{display:block;max-width:460px;margin:6px auto 0;padding:18px 20px;border-radius:14px;background:#E0BD5E;color:#1B1F1D;
   font:800 18px/1.2 Archivo,Inter,system-ui,sans-serif;text-align:center;text-decoration:none;box-shadow:0 10px 26px rgba(224,189,94,.3)}
-.gx-yes span{margin-left:6px}
+.gx-yes span{margin-left:6px} .gx-yes small{display:block;margin-top:5px;font:600 12px Inter,system-ui,sans-serif;opacity:.75}
 .gx-pay,.gx-ya{max-width:460px;margin:10px auto 0;text-align:center;font:500 13px/1.45 Inter,system-ui,sans-serif;color:#9AA59E}
 .gx-ya{color:#CFD6D0}
 .gx-no{display:block;max-width:460px;margin:14px auto 0;text-align:center;font:500 14px Inter,system-ui,sans-serif;color:#9AA59E;text-decoration:underline}
@@ -289,6 +289,16 @@
 .gx-acc h2{margin:0 0 10px;font:900 22px/1.15 Archivo,Inter,sans-serif}
 .gx-acc li{margin:9px 0;line-height:1.5} .gx-acc p{font-size:13px;color:#5B6159;margin:12px 0 0}
 </style>
+<script>
+/* Si Hotmart manda los datos del comprador a esta página, el checkout de ESCUDO se abre ya completado */
+(function(){try{
+  var q=new URLSearchParams(location.search), a=document.getElementById('gxYes'); if(!a) return;
+  var u=new URL(a.href), map={email:['email','buyer_email'],name:['name','buyer_name','first_name'],doc:['doc','document'],phonenumber:['phone','phonenumber','buyer_phone']};
+  for(var k in map) for(var i=0;i<map[k].length;i++){ var v=q.get(map[k][i]); if(v){ u.searchParams.set(k,v); break; } }
+  ['src','sck','utm_source','utm_campaign','utm_medium','utm_content'].forEach(function(k){ var v=q.get(k); if(v) u.searchParams.set(k,v); });
+  a.href=u.toString();
+}catch(e){}})();
+</script>
 
 <script>
 (function(){
@@ -302,7 +312,7 @@
      TIMER_MIN: minutos del contador rojo (arranca al aparecer el botón). Cuando llega a 0
      muestra "00:00" y la oferta sigue activa: lo que la cierra es salir de la página.
      ============================================================ */
-  var CTA_DELAY_SEC = 252;
+  var CTA_DELAY_SEC = 0;
   var TEST_DELAY    = 0;
   var VID           = 'vid-6ad20aac8bfab0b5d0c35489';
   var MEMO          = 'rii_pe_gracias_cta';   /* si recarga después de verlo, el botón ya está */
